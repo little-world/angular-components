@@ -1,0 +1,9 @@
+<p>master works!
+  <button (click)="sendAttr()">send via attr</button>
+  <button (click)="sendViewChild()">send via view child</button>
+  <app-detail [master] = "this" [message] = "message" (messageEvent)="receiveMessage($event)"></app-detail>
+
+  {{message2}}
+-------------
+  {{message3}}
+</p>
